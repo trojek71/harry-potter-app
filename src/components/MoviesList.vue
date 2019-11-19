@@ -1,12 +1,14 @@
 <template>
   <div>
-    <div v-for="movie in movies" :key="movie.id">{{movie.id}}</div>
+    <movie-item v-for="movie in movies" :key="movie.id" :movie="movie"></movie-item>
   </div>
 </template>
 
 <script>
+import MovieItem from "./MovieItem";
 export default {
   name: "MoviesList",
+  components: { MovieItem },
   data() {
     return {
       movies: [
