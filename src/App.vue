@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <add-movie />
     <movies-list />
   </div>
 </template>
 
 <script>
 import MoviesList from "./components/MoviesList.vue";
-
+import AddMovie from "./components/AddMovie.vue";
 export default {
   name: "app",
   components: {
-    MoviesList
+    MoviesList,
+    AddMovie
   }
 };
 </script>
