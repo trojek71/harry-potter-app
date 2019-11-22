@@ -5,7 +5,7 @@ import App from "./App.vue";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-
+import router from "./router";
 import VueApollo, { ApolloProvider } from "vue-apollo";
 
 Vue.config.productionTip = false;
@@ -29,5 +29,6 @@ const apolloProvider = new VueApollo({
 new Vue({
   el: "#app",
   apolloProvider,
+  router,
   render: h => h(App)
 });

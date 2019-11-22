@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <app-header></app-header>
+    <router-view></router-view>
     <img alt="Vue logo" src="./assets/logo.png" />
     <add-movie />
     <movies-list />
@@ -9,9 +11,11 @@
 <script>
 import MoviesList from "./components/MoviesList.vue";
 import AddMovie from "./components/AddMovie.vue";
+import AppHeader from "./components/AppHeader";
 export default {
   name: "app",
   components: {
+    AppHeader,
     MoviesList,
     AddMovie
   }
