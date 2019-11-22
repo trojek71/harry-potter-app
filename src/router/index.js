@@ -11,7 +11,7 @@ export default new Router({
   // 2
   routes: [
     {
-      path: "/",
+      path: "/list",
       component: MovieList
     },
     {
