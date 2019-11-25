@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'grid';
+@import 'mixins';
+@import 'variables';
+
+body{
+    font-size: 16px;
+}
+
+.main-view{
+    height: calc(100vh - 68px);
+    background:$main-background;
+    div{
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        max-height: 300px;
+        margin-top: 30px;
+        border: 2px solid $border-color;
+        background: #fff;
+        h2{
+            text-align: center;
+            color: $navigation-selected-color;
+            font-family: Roboto;
+            font-size: 2em;
+            text-transform: uppercase;
+            margin-top: 35px;
+        }
+    }
+}
+
+.material-icons{
+    &.md-18{
+        font-size: 18px;
+    }
+    &.md-36{
+        font-size: 36px;
+    }
+}
+

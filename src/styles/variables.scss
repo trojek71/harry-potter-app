@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/Roboto-Regular.eot');
+    src: url('/public/fonts/Roboto-Regular.woff2') format('woff2'),
+         url('/public/fonts/Roboto-Regular.woff') format('woff'),
+         url('/public/fonts/Roboto-Regular.ttf') format('truetype'),
+         url('/public/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+         url('/public/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('/public/fonts/Roboto-Bold.eot');
+    src: url('/public/fonts/Roboto-Bold.woff2') format('woff2'),
+         url('/public/fonts/Roboto-Bold.woff') format('woff'),
+         url('/public/fonts/Roboto-Bold.ttf') format('truetype'),
+         url('/public/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+         url('/public/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+$header-background: #25292a;
+$navigation-background: #2f3436;
+$navigation-color: #d1d6d8;
+$navigation-selected-background: #f3f5f5;
+$navigation-selected-color: #707879;
+$distinction-color: #ea7f31;
+$main-background: #f3f5f5;
+$border-color: #e9ebeb;

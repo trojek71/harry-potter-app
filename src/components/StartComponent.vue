@@ -7,7 +7,7 @@
 </template>
 
 <script>
-    import Navigation from "./NavigationComponent";
+    //import Navigation from "./AppHeader";
     export default{
         name:"Start",
         data(){

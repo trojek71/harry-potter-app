@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+
+.col-aside{
+    display: flex;
+    flex: 0 0 20%;
+}
+
+.col-main{
+    display: flex;
+    flex: 0 0 80%;
+}
+
+.col{
+    flex: 1;
+}
+
+.to-borders{
+    justify-content: space-between;
+}

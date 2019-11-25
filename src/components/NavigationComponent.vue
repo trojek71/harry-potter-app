@@ -1,23 +1,24 @@
 <template>
-  <div class="flex pa1 justify-between nowrap orange">
-    <div class="flex flex-fixed black">
-      <div class="fw7 mr1">Moje Filmy</div>
-      <ul class="navigation-list">
-       <!--<li :class="{ 'selected': $route.name == 'start'}"><router-link :to="{name: 'list'}"><i class="material-icons md-36">home</i><span>Start</span></router-link></li>-->
-        <li :class="{ 'selected': $route.name == 'list'}"><router-link :to="{name: 'list'}"><i class="material-icons md-36">Lista </i><span>filmów</span></router-link></li>
-        <li :class="{ 'selected': $route.name == 'create'}"><router-link :to="{name: 'create'}"><i class="material-icons md-36">dodaj </i><span>film</span></router-link></li>
-        <!--<li><router-link to="/list" class="ml1 no-underline black">Moja lista filmów</router-link></li>
-        <li><router-link to="/create" class="ml1 no-underline black">Dodaj nowy film</router-link></li>-->
-      </ul>
-    </div>
-  </div>
+    <aside class="col-aside navigation">
+        <h2>Main</h2>
+        <ul class="navigation-list">
+            <li :class="{ 'selected': $route.name == 'start'}"><router-link :to="{name: 'start'}"><i class="material-icons md-36">home</i><span>Start</span></router-link></li>
+            <li :class="{ 'selected': $route.name == 'clients'}"><router-link :to="{name: 'clients'}"><i class="material-icons md-36">people</i><span>Klienci</span></router-link></li>
+            <li :class="{ 'selected': $route.name == 'repairs'}"><router-link :to="{name: 'repairs'}"><i class="material-icons md-36">build</i><span>Naprawy</span></router-link></li>
+            <li :class="{ 'selected': $route.name == 'cars'}"><router-link :to="{name: 'cars'}"><i class="material-icons md-36">directions_car</i><span>Samochody</span></router-link></li>
+        </ul>
+    </aside>
 </template>
 
 <script>
-export default {
-  name: "AppHeader"
-};
+    export default{
+        name: "Navigation",
+        data(){
+            return{};
+        }
+    }
 </script>
+
 <style lang="scss" scoped>
     @import "../styles/variables";
     .navigation{

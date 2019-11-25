@@ -11,7 +11,7 @@ import VueApollo, { ApolloProvider } from "vue-apollo";
 Vue.config.productionTip = false;
 
 const httpLink = new HttpLink({
-  uri: "http://192.168.66.189:8080/v1/graphql"
+  uri: "http://192.168.1.5:8080/v1/graphql"
 });
 
 const apolloClient = new ApolloClient({
